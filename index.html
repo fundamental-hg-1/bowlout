@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071b2e">
+  <meta name="description" content="Bowl Out Rice and Noodles at Liberty Collective, 6735 Lakota Ln, Liberty Township, OH 45044. Family-owned ramen, handcrafted rice bowls, poke, and crispy appetizers.">
+  <title>Bowl Out Rice and Noodles</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/png" href="images/favicon.jfif">
+  <meta property="og:site_name" content="Bowl Out Rice and Noodles">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Bowl Out Rice and Noodles",
+      "alternateName": "Bowl Out Rice and Noodles: Deep Broths & Bold Bowls",
+      "description": "Family-owned ramen, handcrafted rice bowls, and crispy appetizers located inside Liberty Collective in Liberty Township, Ohio.",
+      "telephone": "+1-513-838-5704",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "6735 Lakota Ln",
+        "addressLocality": "Liberty Township",
+        "addressRegion": "OH",
+        "postalCode": "45044",
+        "addressCountry": "US"
+      }
+    }
+  </script>
+</head>
+<body>
+
+  <!-- Top Navigation Header -->
+  <header class="top">
+    <a href="#home" class="brand">
+      <img src="images/logo_web.png" alt="Bowl Out Rice and Noodles Logo" width="200" height="50">
+    </a>
+    <nav>
+      <a href="#menu">MENU</a>
+      <a href="#story">STORY</a>
+      <a href="#visit">VISIT</a>
+    </nav>
+    <button type="button" class="button small order-trigger">ORDER ONLINE</button>
+  </header>
+
+ <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div>
+      <!-- SEO H1: Hidden visually, read by search engines -->
+      <h1 class="visually-hidden">Bowl Out Rice and Noodles</h1>
+      <span class="eyebrow">LIBERTY COLLECTIVE</span>
+      <h2 class="hero-title">DEEP BROTHS. <em>BOLD BOWLS.</em></h2>
+      <p>Family-owned ramen, handcrafted rice bowls, and crispy appetizers made fresh to order inside Liberty Collective.</p>
+      <div class="actions">
+        <a href="#menu" class="button">EXPLORE THE MENU</a>
+        <a href="#visit" class="textlink">VISIT US &rarr;</a>
+      </div>
+    </div>
+    <div class="hero-art">
+      <img src="images/logo.png" alt="Bowl Out Rice and Noodles Emblem" class="hero-logo">
+      <div class="roundel">
+        <span>100%</span>
+        <small>MADE TO ORDER</small>
+      </div>
+    </div>
+  </section>
+
+  <!-- Brand Ticker -->
+  <div class="ticker">
+    <span>&#9733; FAMILY OWNED &amp; OPERATED</span>
+    <span>&#9733; SERVING LIBERTY COLLECTIVE</span>
+    <span>&#9733; 100% MADE TO ORDER</span>
+  </div>
+
+  <!-- Menu Section -->
+  <section id="menu" class="section">
+    <div class="section-heading">
+      <div>
+        <span class="category">OUR OFFERINGS</span>
+        <h2>THE <span class="orange">MENU</span></h2>
+      </div>
+      <p>Slow-simmered ramens, loaded rice bowls, and crispy starters made fresh to order. Filter by category below to explore our lineup.</p>
+    </div>
+
+    <div class="filters">
+      <button type="button" class="active" onclick="filterMenu('all', this)">ALL ITEMS</button>
+      <button type="button" onclick="filterMenu('appetizers', this)">APPETIZERS</button>
+      <button type="button" onclick="filterMenu('ramens', this)">RAMENS</button>
+      <button type="button" onclick="filterMenu('rice bowls', this)">RICE BOWLS</button>
+      <button type="button" onclick="filterMenu('kids meals', this)">KIDS</button>
+    </div>
+
+    <!-- Main Dynamic Menu Grid -->
+    <div class="menu-grid" id="menu-container">
+      <!-- Injected dynamically via js/main.js -->
+    </div>
+
+    <!-- Consumer Advisory / Notes Injected Below Grid -->
+    <div id="upgrade-container"></div>
+  </section>
+
+  <!-- Story Section -->
+  <section id="story" class="story">
+    <div class="story-mark">
+      <span>BO</span>
+    </div>
+    <div>
+      <span class="category">OUR STORY</span>
+      <h2>DEEP BROTHS. <br><em>BOLD BOWLS.</em></h2>
+      <p>At <strong>Bowl Out Rice and Noodles</strong>, we believe comfort food should hit big on flavor without overcomplicating the experience. Every bowl starts with rich, savory broths, steamed rice, and fresh ingredients prepped daily.</p>
+      <p>We’re a family-owned kitchen built around doing Asian comfort classics the right way—from slow-braised pork belly miso ramen and crispy chicken karaage to fresh poke and house-made sauces that bring every bite together.</p>
+      <p>Whether you’re grabbing crispy crab rangoons to share, slurping down a hot bowl of shoyu ramen, or loading up a teriyaki bowl after a busy day in Liberty Township, everything is cooked hot and fresh when you order.</p>
+      <p>Big portions. House-made sauces. Honest ingredients.<br><strong>Bold bowls. Done right.</strong></p>
+      <br><strong>&bull; EST. 2026 &bull;</strong>
+    </div>
+  </section>
+
+  <!-- Order Online CTA Section -->
+  <section class="order">
+    <span class="category">READY TO EAT?</span>
+    <h2>ORDER ONLINE FOR <span class="orange">PICKUP</span></h2>
+    <p>Skip the wait and order ahead. Click below to place your order directly through our secure ordering partner.</p>
+    <button type="button" class="button order-trigger">START YOUR ORDER NOW</button>
+    <small>Secure checkout powered by Liberty Collective ordering portal.</small>
+  </section>
+
+  <!-- Visit & Inquiry Section -->
+  <section id="visit" class="visit">
+    <div>
+      <span class="category">LOCATION &amp; HOURS</span>
+      <h2>COME <span class="orange">SEE US</span></h2>
+      <p>Stop by for lunch, dinner, or a late-night bite!<br></p>
+      <div class="sibling-concepts">
+        <span class="concepts-label">Explore our other concepts:</span>
+        <a href="https://www.pisocietypizza.com" target="_blank" rel="noopener noreferrer" class="concept-link">PI Society Pizza</a>
+        <a href="https://www.smashngrab-burgers.com" target="_blank" rel="noopener noreferrer" class="concept-link">Smash &amp; Grab Burgers</a>
+        <a href="https://www.taco-heist.com" target="_blank" rel="noopener noreferrer" class="concept-link">Taco Heist</a>
+      </div>
+    </div>
+    <div>
+      <h3>LOCATION / ADDRESS</h3>
+      <p>6735 Lakota Ln,<br>Liberty Township, OH 45044<br><br>Located inside Liberty Collective</p>
+      <h3>HOURS OF OPERATION</h3>
+      <p>
+        <strong>Monday – Thursday:</strong> 11:00 AM – 9:00 PM<br>
+        <strong>Friday – Saturday:</strong> 11:00 AM – 10:00 PM<br>
+        <strong>Sunday:</strong> 11:00 AM – 9:00 PM
+      </p>
+      <h3>CONTACT &amp; INQUIRIES</h3>
+      <p><strong>Phone:</strong> +1 (513) 838-5704<br><strong>Email:</strong> inquiry@fundamental-hg.com</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <a href="#home" class="brand">
+      <img src="images/logo_web.png" alt="Bowl Out Rice and Noodles Logo">
+    </a>
+    <p>&copy; 2026 Bowl Out Rice and Noodles. All rights reserved.</p>
+    <div class="legal-links">
+      <a href="/privacy.html">Privacy Policy</a>
+      <a href="/terms.html">Terms of Service</a>
+    </div>
+    <strong>Fundamental HG</strong>
+  </footer>
+
+  <!-- External Redirect Popup Modal -->
+  <div class="modal-overlay" id="orderModal" role="dialog" aria-modal="true" aria-labelledby="orderModalTitle">
+    <div class="modal-box">
+      <h3 id="orderModalTitle">REDIRECTING TO ORDER</h3>
+      <p>You are now being redirected to our secure online ordering partner at Liberty Collective.</p>
+      <div class="modal-actions">
+        <button type="button" class="button small" id="proceedBtn">CONTINUE</button>
+        <button type="button" class="button small btn-cancel" id="cancelBtn">CANCEL</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script defer src="js/menu-data.js"></script>
+  <script defer src="js/main.js"></script>
+</body>
+</html>
