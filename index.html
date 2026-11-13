@@ -6,6 +6,9 @@
   <meta name="theme-color" content="#071b2e">
   <meta name="description" content="Bowl Out Rice and Noodles at Liberty Collective, 6735 Lakota Ln, Liberty Township, OH 45044. Family-owned ramen, handcrafted rice bowls, poke, and crispy appetizers.">
   <title>Bowl Out Rice and Noodles | Liberty Twp, OH</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="icon" type="image/png" href="images/favicon.jfif">
   <meta property="og:site_name" content="Bowl Out Rice and Noodles">
@@ -22,7 +25,7 @@
         "streetAddress": "6735 Lakota Ln",
         "addressLocality": "Liberty Township",
         "addressRegion": "OH",
-        "postalCode": "45044",
+        "postalCode": "45044"
       }
     }
   </script>
@@ -42,7 +45,7 @@
     <button type="button" class="button small order-trigger">ORDER ONLINE</button>
   </header>
 
- <!-- Hero Section -->
+  <!-- Hero Section -->
   <section id="home" class="hero">
     <div>
       <!-- SEO H1: Hidden visually, read by search engines -->
@@ -71,7 +74,7 @@
     <span>&#9733; 100% MADE TO ORDER</span>
   </div>
 
-  <!-- Menu Section -->
+  <!-- Menu Section (sticky boundary for .filters until #story enters) -->
   <section id="menu" class="section">
     <div class="section-heading">
       <div>
@@ -81,7 +84,7 @@
       <p>Slow-simmered ramens, loaded rice bowls, and crispy starters made fresh to order. Filter by category below to explore our lineup.</p>
     </div>
 
-    <div class="filters">
+    <div class="filters" role="tablist" aria-label="Menu Categories">
       <button type="button" class="active" onclick="filterMenu('all', this)">ALL ITEMS</button>
       <button type="button" onclick="filterMenu('appetizers', this)">APPETIZERS</button>
       <button type="button" onclick="filterMenu('ramens', this)">RAMENS</button>
@@ -178,5 +181,50 @@
   <!-- Scripts -->
   <script defer src="js/menu-data.js"></script>
   <script defer src="js/main.js"></script>
+  <script>
+    (function () {
+      const header = document.querySelector('header.top');
+      const menuSection = document.getElementById('menu');
+      const filtersBar = document.querySelector('.filters');
+
+      function syncStickyMetrics() {
+        if (!header) return;
+        const headerHeight = header.getBoundingClientRect().height;
+        document.documentElement.style.setProperty('--header-height', headerHeight + 'px');
+
+        if (filtersBar) {
+          const filtersTop = filtersBar.getBoundingClientRect().top;
+          const isStuck = Math.abs(filtersTop - headerHeight) <= 2;
+          filtersBar.classList.toggle('is-stuck', isStuck);
+        }
+      }
+
+      syncStickyMetrics();
+      window.addEventListener('scroll', syncStickyMetrics, { passive: true });
+      window.addEventListener('resize', syncStickyMetrics, { passive: true });
+      window.addEventListener('load', syncStickyMetrics);
+
+      if ('ResizeObserver' in window && header) {
+        new ResizeObserver(syncStickyMetrics).observe(header);
+      }
+
+      if (filtersBar && menuSection) {
+        filtersBar.addEventListener('click', function (e) {
+          const btn = e.target.closest('button');
+          if (!btn) return;
+
+          if (btn.scrollIntoView) {
+            btn.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+          }
+
+          const headerOffset = header ? header.getBoundingClientRect().height : 0;
+          const menuTop = menuSection.getBoundingClientRect().top + window.scrollY - headerOffset;
+          if (window.scrollY > menuTop + 32) {
+            window.scrollTo({ top: menuTop, behavior: 'smooth' });
+          }
+        });
+      }
+    })();
+  </script>
 </body>
 </html>
