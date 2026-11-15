@@ -3,7 +3,7 @@
    ========================================================================== */
 
 // Third-party ordering portal URL (update slug when Liberty Collective portal link is live)
-const ORDER_PORTAL_URL = "https://www.meandu.app/liberty-collective-mvo/counter";
+// const ORDER_PORTAL_URL = "https://www.meandu.app/liberty-collective-mvo/counter";
 
 // Default menu dataset (overridden automatically if js/menu-data.js defines window.menuData)
 const defaultBowlOutMenu = [
