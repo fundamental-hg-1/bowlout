@@ -11,22 +11,40 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="icon" type="image/png" href="images/favicon.jfif">
+  <link rel="canonical" href="https://www.bowloutrn.com/">
   <meta property="og:site_name" content="Bowl Out Rice and Noodles">
+  <meta property="og:title" content="Bowl Out Rice and Noodles | Liberty Twp, OH">
+  <meta property="og:url" content="https://www.bowloutrn.com/">
+  <meta property="og:type" content="website">
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "Bowl Out Rice and Noodles",
-      "alternateName": "Bowl Out Rice and Noodles: Deep Broths & Bold Bowls",
-      "description": "Family-owned ramen, handcrafted rice bowls, and crispy appetizers located inside Liberty Collective in Liberty Township, Ohio.",
-      "telephone": "+1-513-838-5704",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "6735 Lakota Ln",
-        "addressLocality": "Liberty Township",
-        "addressRegion": "OH",
-        "postalCode": "45044"
-      }
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://www.bowloutrn.com/#website",
+          "name": "Bowl Out Rice and Noodles",
+          "alternateName": "Bowl Out Rice and Noodles: Deep Broths & Bold Bowls",
+          "url": "https://www.bowloutrn.com/"
+        },
+        {
+          "@type": "Restaurant",
+          "@id": "https://www.bowloutrn.com/#restaurant",
+          "name": "Bowl Out Rice and Noodles",
+          "description": "Family-owned ramen, handcrafted rice bowls, and crispy appetizers located inside Liberty Collective in Liberty Township, Ohio.",
+          "url": "https://www.bowloutrn.com/",
+          "telephone": "+1-513-838-5704",
+          "servesCuisine": "Asian",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "6735 Lakota Ln",
+            "addressLocality": "Liberty Township",
+            "addressRegion": "OH",
+            "postalCode": "45044",
+            "addressCountry": "US"
+          }
+        }
+      ]
     }
   </script>
 </head>
@@ -34,8 +52,8 @@
 
   <!-- Top Navigation Header -->
   <header class="top">
-    <a href="#home" class="brand">
-      <img src="images/logo_web.png" alt="Bowl Out Rice and Noodles Logo" width="200" height="50">
+    <a href="/" class="brand" aria-label="Bowl Out Rice and Noodles Home">
+      <img src="images/logo_web.png" alt="Bowl Out Rice and Noodles" width="200" height="50">
     </a>
     <nav>
       <a href="#menu">MENU</a>
