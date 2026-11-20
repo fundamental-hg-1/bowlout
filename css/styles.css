@@ -12,7 +12,7 @@
   --orange-hover: #d85307;
   --amber: #f5a012;
   --cyan: #32d9e8;
-  --font-display: 'Oswald', 'Arial Narrow', sans-serif;
+  --font-display: 'DM Sans', system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   --font-body: 'DM Sans', system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   --header-height: 77px;
 }
@@ -90,8 +90,8 @@ a {
   border: 2px solid var(--orange);
   padding: 0.85rem 1.75rem;
   font-family: var(--font-display);
-  font-weight: 600;
-  font-size: 1.05rem;
+  font-weight: 700;
+  font-size: 1rem;
   letter-spacing: 0.09em;
   text-transform: uppercase;
   border-radius: 4px;
@@ -107,7 +107,7 @@ a {
 
 .button.small {
   padding: 0.55rem 1.15rem;
-  font-size: 0.92rem;
+  font-size: 0.88rem;
 }
 
 .button.btn-cancel {
@@ -121,7 +121,7 @@ a {
 }
 
 /* ==========================================================================
-   Top Navigation Header
+   Top Navigation Header (Main Homepage)
    ========================================================================== */
 header.top {
   position: sticky;
@@ -184,15 +184,16 @@ header.top nav a:hover {
   font-size: 0.78rem;
   font-weight: 700;
   letter-spacing: 0.16em;
+  text-transform: uppercase;
   margin-bottom: 1rem;
 }
 
 .hero-title {
   font-family: var(--font-display);
   font-weight: 700;
-  font-size: clamp(2.8rem, 5.5vw, 4.75rem);
-  line-height: 1.02;
-  letter-spacing: 0.04em;
+  font-size: clamp(2.6rem, 5vw, 4.4rem);
+  line-height: 1.06;
+  letter-spacing: -0.015em;
   text-transform: uppercase;
   color: var(--cream);
   margin-bottom: 1.25rem;
@@ -206,7 +207,7 @@ header.top nav a:hover {
 .hero p {
   font-size: 1.08rem;
   line-height: 1.65;
-  letter-spacing: 0.015em;
+  letter-spacing: 0.01em;
   color: var(--cream-muted);
   max-width: 520px;
   margin-bottom: 2rem;
@@ -258,16 +259,16 @@ header.top nav a:hover {
 .roundel span {
   font-family: var(--font-display);
   font-weight: 700;
-  font-size: 2.15rem;
+  font-size: 2rem;
   line-height: 1;
   color: var(--cream);
-  letter-spacing: 0.04em;
+  letter-spacing: -0.01em;
 }
 
 .roundel small {
   font-size: 0.72rem;
   font-weight: 700;
-  letter-spacing: 0.11em;
+  letter-spacing: 0.1em;
   color: var(--bg-navy);
   margin-top: 0.25rem;
   line-height: 1.15;
@@ -292,9 +293,9 @@ header.top nav a:hover {
   background-color: var(--orange);
   color: var(--cream);
   font-family: var(--font-display);
-  font-weight: 600;
-  font-size: 1.05rem;
-  letter-spacing: 0.12em;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   border-top: 2px solid var(--cyan);
   border-bottom: 2px solid var(--cyan);
@@ -322,9 +323,9 @@ header.top nav a:hover {
 .section-heading h2 {
   font-family: var(--font-display);
   font-weight: 700;
-  font-size: clamp(2.2rem, 4vw, 3.25rem);
-  line-height: 1.04;
-  letter-spacing: 0.05em;
+  font-size: clamp(2.1rem, 4vw, 3.1rem);
+  line-height: 1.08;
+  letter-spacing: -0.015em;
   text-transform: uppercase;
 }
 
@@ -333,7 +334,6 @@ header.top nav a:hover {
   color: var(--cream-muted);
   font-size: 0.98rem;
   line-height: 1.6;
-  letter-spacing: 0.015em;
 }
 
 .filters {
@@ -371,7 +371,7 @@ header.top nav a:hover {
   padding: 0.55rem 1.15rem;
   font-weight: 700;
   font-size: 0.85rem;
-  letter-spacing: 0.11em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   border-radius: 4px;
   cursor: pointer;
@@ -421,18 +421,17 @@ header.top nav a:hover {
 
 .menu-card h3 {
   font-family: var(--font-display);
-  font-weight: 600;
-  font-size: 1.32rem;
-  letter-spacing: 0.06em;
-  line-height: 1.28;
+  font-weight: 700;
+  font-size: 1.25rem;
+  letter-spacing: -0.01em;
+  line-height: 1.3;
   color: var(--cream);
 }
 
 .menu-price {
   font-family: var(--font-display);
-  font-weight: 600;
-  font-size: 1.28rem;
-  letter-spacing: 0.05em;
+  font-weight: 700;
+  font-size: 1.22rem;
   font-variant-numeric: tabular-nums;
   color: var(--amber);
   white-space: nowrap;
@@ -441,7 +440,6 @@ header.top nav a:hover {
 .menu-card p {
   font-size: 0.95rem;
   line-height: 1.58;
-  letter-spacing: 0.015em;
   color: var(--cream-muted);
   margin-bottom: 0.95rem;
 }
@@ -450,7 +448,7 @@ header.top nav a:hover {
   align-self: flex-start;
   font-size: 0.72rem;
   font-weight: 700;
-  letter-spacing: 0.13em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--cyan);
   background-color: rgba(50, 217, 232, 0.1);
@@ -467,7 +465,6 @@ header.top nav a:hover {
   border-radius: 4px;
   font-size: 0.86rem;
   line-height: 1.6;
-  letter-spacing: 0.012em;
   color: var(--cream-muted);
 }
 
@@ -506,8 +503,8 @@ header.top nav a:hover {
   border: 4px solid var(--cyan);
   font-family: var(--font-display);
   font-weight: 700;
-  font-size: 4rem;
-  letter-spacing: 0.06em;
+  font-size: 3.6rem;
+  letter-spacing: -0.02em;
   color: var(--cream);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
 }
@@ -515,9 +512,9 @@ header.top nav a:hover {
 .story h2 {
   font-family: var(--font-display);
   font-weight: 700;
-  font-size: clamp(2.1rem, 4vw, 3.1rem);
-  line-height: 1.06;
-  letter-spacing: 0.05em;
+  font-size: clamp(2.1rem, 4vw, 3rem);
+  line-height: 1.1;
+  letter-spacing: -0.015em;
   text-transform: uppercase;
   margin-bottom: 1.25rem;
 }
@@ -532,12 +529,10 @@ header.top nav a:hover {
   margin-bottom: 1rem;
   font-size: 1rem;
   line-height: 1.65;
-  letter-spacing: 0.015em;
 }
 
 .story strong {
   color: var(--cream);
-  letter-spacing: 0.02em;
 }
 
 /* ==========================================================================
@@ -553,8 +548,9 @@ header.top nav a:hover {
 .order h2 {
   font-family: var(--font-display);
   font-weight: 700;
-  font-size: clamp(2.2rem, 4vw, 3.2rem);
-  letter-spacing: 0.05em;
+  font-size: clamp(2.1rem, 4vw, 3.1rem);
+  line-height: 1.1;
+  letter-spacing: -0.015em;
   text-transform: uppercase;
   margin-bottom: 0.75rem;
 }
@@ -564,14 +560,12 @@ header.top nav a:hover {
   margin: 0 auto 1.75rem;
   color: var(--cream-muted);
   line-height: 1.6;
-  letter-spacing: 0.015em;
 }
 
 .order small {
   display: block;
   margin-top: 1rem;
   font-size: 0.82rem;
-  letter-spacing: 0.02em;
   color: var(--cream-muted);
 }
 
@@ -591,18 +585,20 @@ header.top nav a:hover {
 .visit h2 {
   font-family: var(--font-display);
   font-weight: 700;
-  font-size: clamp(2.2rem, 4vw, 3.1rem);
-  letter-spacing: 0.05em;
+  font-size: clamp(2.1rem, 4vw, 3rem);
+  line-height: 1.1;
+  letter-spacing: -0.015em;
   text-transform: uppercase;
   margin-bottom: 0.75rem;
 }
 
 .visit h3 {
   font-family: var(--font-display);
-  font-weight: 600;
-  font-size: 1.2rem;
-  letter-spacing: 0.11em;
+  font-weight: 700;
+  font-size: 1.15rem;
+  letter-spacing: 0.08em;
   line-height: 1.3;
+  text-transform: uppercase;
   color: var(--amber);
   margin-top: 1.55rem;
   margin-bottom: 0.45rem;
@@ -615,14 +611,12 @@ header.top nav a:hover {
 .visit p {
   font-size: 0.98rem;
   line-height: 1.72;
-  letter-spacing: 0.018em;
   color: var(--cream-muted);
 }
 
 .visit strong {
   color: var(--cream);
   font-weight: 700;
-  letter-spacing: 0.025em;
 }
 
 .sibling-concepts {
@@ -643,7 +637,6 @@ header.top nav a:hover {
 
 .concept-link {
   font-weight: 700;
-  letter-spacing: 0.02em;
   color: var(--cream);
   border-bottom: 1.5px solid var(--orange);
   padding-bottom: 2px;
@@ -655,7 +648,7 @@ header.top nav a:hover {
 }
 
 /* ==========================================================================
-   Footer
+   Main Homepage Footer
    ========================================================================== */
 footer {
   display: flex;
@@ -667,7 +660,6 @@ footer {
   background-color: #04111e;
   border-top: 2px solid var(--border-subtle);
   font-size: 0.88rem;
-  letter-spacing: 0.015em;
   color: var(--cream-muted);
 }
 
@@ -687,7 +679,7 @@ footer .brand img {
 
 footer strong {
   color: var(--cream);
-  letter-spacing: 0.08em;
+  letter-spacing: 0.06em;
 }
 
 /* ==========================================================================
@@ -723,8 +715,8 @@ footer strong {
 .modal-box h3 {
   font-family: var(--font-display);
   font-weight: 700;
-  font-size: 1.65rem;
-  letter-spacing: 0.06em;
+  font-size: 1.55rem;
+  letter-spacing: -0.01em;
   color: #071b2e;
   margin-bottom: 0.75rem;
 }
@@ -732,7 +724,6 @@ footer strong {
 .modal-box p {
   font-size: 0.98rem;
   line-height: 1.6;
-  letter-spacing: 0.015em;
   color: #334155;
   margin-bottom: 1.5rem;
 }
@@ -741,6 +732,259 @@ footer strong {
   display: flex;
   justify-content: center;
   gap: 0.85rem;
+}
+
+/* ==========================================================================
+   Bowl Out Blog Hub & Dispatch Pages (/blog/)
+   ========================================================================== */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 900;
+  min-height: var(--header-height, 77px);
+  background-color: rgba(7, 27, 46, 0.96);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-bottom: 2px solid var(--border-subtle);
+  display: flex;
+  align-items: center;
+}
+
+.site-header .nav-wrap {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0.75rem 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.site-header .brand-logo,
+.brand-logo {
+  height: 48px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.site-header .nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+  flex-wrap: wrap;
+}
+
+.site-header .nav-links a {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.88rem;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  color: var(--cream);
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.site-header .nav-links a:hover {
+  color: var(--cyan);
+}
+
+.site-header .btn.btn-nav {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--orange);
+  color: #ffffff;
+  border: 1.5px solid var(--orange);
+  padding: 0.55rem 1.15rem;
+  border-radius: 4px;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.82rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, transform 0.15s ease;
+}
+
+.site-header .btn.btn-nav:hover {
+  background-color: var(--orange-hover);
+  border-color: var(--orange-hover);
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.blog-filter-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-surface);
+  color: var(--cream);
+  border: 1.5px solid var(--border-subtle);
+  padding: 0.55rem 1.15rem;
+  border-radius: 4px;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.82rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, transform 0.15s ease;
+}
+
+.blog-filter-btn:hover {
+  background-color: var(--bg-card);
+  border-color: var(--cyan);
+  color: var(--cyan);
+  transform: translateY(-1px);
+}
+
+.blog-filter-btn.active {
+  background-color: var(--orange);
+  border-color: var(--orange);
+  color: #ffffff;
+}
+
+.blog-hero-header {
+  width: 100%;
+  max-width: 780px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.blog-hero-header h1,
+.blog-post-container .panel h1 {
+  font-family: var(--font-body);
+  font-weight: 700;
+  line-height: 1.12;
+  letter-spacing: -0.015em;
+  color: var(--cream);
+}
+
+.blog-post-container .eyebrow,
+#posts-feed .eyebrow {
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: var(--cyan);
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 0.4rem;
+}
+
+a.eyebrow:hover,
+#posts-feed a.eyebrow:hover,
+.blog-post-container a.eyebrow:hover {
+  color: var(--amber);
+}
+
+#posts-feed .panel,
+.blog-post-container .panel {
+  background-color: var(--bg-surface);
+  border: 1.5px solid var(--border-subtle);
+  border-top: 4px solid var(--orange);
+  border-radius: 8px;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.32);
+  color: var(--cream);
+}
+
+#posts-feed .panel h2 {
+  font-family: var(--font-body);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--cream);
+}
+
+#posts-feed .panel h2 a:hover {
+  color: var(--amber) !important;
+}
+
+#posts-feed .panel p,
+.blog-post-container .panel p {
+  font-family: var(--font-body);
+  color: var(--cream-muted);
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.blog-post-container .panel strong,
+.blog-post-container .panel b {
+  color: var(--cream);
+}
+
+.blog-post-container .panel ul {
+  margin: 0.65rem 0 1.25rem 1.35rem;
+  padding: 0;
+  color: var(--cream-muted);
+  line-height: 1.7;
+}
+
+.blog-post-container .panel li {
+  margin-bottom: 0.45rem;
+}
+
+.blog-post-container .panel a {
+  color: var(--cyan);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.blog-post-container .panel a:hover {
+  color: var(--amber);
+}
+
+.site-footer {
+  background-color: #04111e;
+  border-top: 2px solid var(--border-subtle);
+  padding: 3rem 5% 2rem;
+  color: var(--cream-muted);
+}
+
+.site-footer .footer-inner {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.1rem;
+}
+
+.site-footer .footer-brand img {
+  height: 48px;
+  width: auto;
+  margin: 0 auto;
+}
+
+.site-footer .footer-tagline {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--amber);
+  margin: 0;
+}
+
+.site-footer .footer-bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.5rem;
+  padding-top: 1.25rem;
+  margin-top: 0.5rem;
+  border-top: 1px solid var(--border-subtle);
+  font-size: 0.82rem;
+  color: var(--cream-muted);
 }
 
 /* ==========================================================================
@@ -840,6 +1084,21 @@ footer strong {
 
   .menu-card {
     padding: 1.05rem 1.2rem;
+  }
+
+  .site-header .nav-wrap {
+    justify-content: center;
+    gap: 0.75rem 1rem;
+  }
+
+  .site-header .nav-links {
+    justify-content: center;
+    gap: 0.85rem 1.15rem;
+  }
+
+  .site-footer .footer-bottom {
+    flex-direction: column;
+    text-align: center;
   }
 
   footer {
