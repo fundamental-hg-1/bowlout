@@ -58,8 +58,8 @@ a {
   position: absolute;
   width: 1px;
   height: 1px;
-  margin: -1px;
   padding: 0;
+  margin: -1px;
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
@@ -101,4 +101,67 @@ a {
 
 .button:hover {
   background-color: var(--orange-hover);
-  border-color: var(--
+  border-color: var(--orange-hover);
+  transform: translateY(-1px);
+}
+
+.button.small {
+  padding: 0.55rem 1.15rem;
+  font-size: 0.88rem;
+}
+
+.button.btn-cancel {
+  background-color: #64748b;
+  border-color: #64748b;
+}
+
+.button.btn-cancel:hover {
+  background-color: #475569;
+  border-color: #475569;
+}
+
+/* ==========================================================================
+   Top Navigation Header (Main Homepage)
+   ========================================================================== */
+header.top {
+  position: sticky;
+  top: 0;
+  z-index: 900;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 0.85rem 5%;
+  background-color: rgba(7, 27, 46, 0.96);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-bottom: 2px solid var(--border-subtle);
+}
+
+header.top .brand img {
+  height: 48px;
+  width: auto;
+  object-fit: contain;
+}
+
+header.top nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+header.top nav a {
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 0.12em;
+  color: var(--cream);
+  transition: color 0.2s ease;
+}
+
+header.top nav a:hover {
+  color: var(--cyan);
+}
+
+/* ==========================================================================
+   Hero Section
+   ================================================================
