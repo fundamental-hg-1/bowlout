@@ -1,8 +1,8 @@
 /* ==========================================================================
-   Bowl Out Rice and Noodles — Menu Filtering & Order Redirect Modal
+   Bowl Out Rice and Noodles — Menu Filtering & Direct Portal Analytics
    ========================================================================== */
 
-// Third-party ordering portal URL (update slug when Liberty Collective portal link is live)
+// Toast online ordering portal URL (single source of truth synced to direct CTA links)
 const ORDER_PORTAL_URL = "https://order.toasttab.com/online/bowl-out-liberty-collective";
 
 // Default menu dataset (overridden automatically if js/menu-data.js defines window.menuData)
@@ -190,55 +190,18 @@ document.addEventListener("DOMContentLoaded", () => {
   renderMenu("all");
   renderConsumerAdvisory();
 
-  // 2. Order Online External Redirect Modal
-  const orderModal = document.getElementById("orderModal");
-  const orderTriggers = document.querySelectorAll(".order-trigger");
-  const proceedBtn = document.getElementById("proceedBtn");
-  const cancelBtn = document.getElementById("cancelBtn");
-
-  function openOrderModal() {
-    if (orderModal) {
-      orderModal.classList.add("active");
-    }
-  }
-
-  function closeOrderModal() {
-    if (orderModal) {
-      orderModal.classList.remove("active");
-    }
-  }
-
-  orderTriggers.forEach((trigger) => {
-    trigger.addEventListener("click", (e) => {
-      e.preventDefault();
-      openOrderModal();
-    });
-  });
-
-  if (proceedBtn) {
-    proceedBtn.addEventListener("click", () => {
-      closeOrderModal();
-      window.open(ORDER_PORTAL_URL, "_blank", "noopener,noreferrer");
-    });
-  }
-
-  if (cancelBtn) {
-    cancelBtn.addEventListener("click", closeOrderModal);
-  }
-
-  // Close modal when clicking outside the white dialog box
-  if (orderModal) {
-    orderModal.addEventListener("click", (e) => {
-      if (e.target === orderModal) {
-        closeOrderModal();
+  // 2. Direct Order Links — Sync URL & Push GTM Click Event without Modal Friction
+  const directOrderLinks = document.querySelectorAll(".order-direct-link");
+  directOrderLinks.forEach((link) => {
+    link.setAttribute("href", ORDER_PORTAL_URL);
+    link.addEventListener("click", () => {
+      if (Array.isArray(window.dataLayer)) {
+        window.dataLayer.push({
+          event: "order_online_click",
+          order_destination: "toast_online_ordering",
+          order_url: ORDER_PORTAL_URL
+        });
       }
     });
-  }
-
-  // Close modal when pressing Escape
-  document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape" && orderModal && orderModal.classList.contains("active")) {
-      closeOrderModal();
-    }
   });
 });

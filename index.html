@@ -58,7 +58,7 @@
 
   <!-- Top Navigation Header -->
   <header class="top">
-    <a href="/" class="brand" aria-label="Bowl Out Rice and Noodles Home">
+    <a href="index.html" class="brand" aria-label="Bowl Out Rice and Noodles Home">
       <img src="images/logo_web.png" alt="Bowl Out Rice and Noodles" width="200" height="50">
     </a>
     <nav>
@@ -67,21 +67,40 @@
       <a href="#visit">VISIT</a>
       <a href="blog/index.html">BLOG</a>
     </nav>
-    <button type="button" class="button small order-trigger">ORDER ONLINE</button>
+    <div class="header-order-group">
+      <a
+        href="https://order.toasttab.com/online/bowl-out-liberty-collective"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="button small order-direct-link"
+        aria-label="Order Online via Toast (opens in new tab)"
+      >
+        ORDER ONLINE
+      </a>
+      <span class="order-microcopy-header">Order via Toast</span>
+    </div>
   </header>
 
   <!-- Hero Section -->
   <section id="home" class="hero">
-    <div>
+    <div class="hero-copy">
       <!-- SEO H1: Hidden visually, read by search engines -->
       <h1 class="visually-hidden">Bowl Out Rice and Noodles</h1>
       <span class="eyebrow">LIBERTY COLLECTIVE</span>
       <h2 class="hero-title">DEEP BROTHS. <em>BOLD BOWLS.</em></h2>
       <p>Family-owned ramen, handcrafted rice bowls, and crispy appetizers made fresh to order inside Liberty Collective.</p>
       <div class="actions">
-        <a href="#menu" class="button">EXPLORE THE MENU</a>
-        <a href="#visit" class="textlink">VISIT US &rarr;</a>
+        <a
+          href="https://order.toasttab.com/online/bowl-out-liberty-collective"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="button order-direct-link"
+        >
+          ORDER ONLINE
+        </a>
+        <a href="#menu" class="textlink">EXPLORE THE MENU &rarr;</a>
       </div>
+      <p class="hero-order-note">Order via Toast &bull; Freshly prepared to order</p>
     </div>
     <div class="hero-art">
       <img src="images/logo.png" alt="Bowl Out Rice and Noodles Emblem" class="hero-logo">
@@ -131,14 +150,14 @@
     <div class="story-mark">
       <span>BO</span>
     </div>
-    <div>
+    <div class="story-copy">
       <span class="category">OUR STORY</span>
       <h2>DEEP BROTHS. <br><em>BOLD BOWLS.</em></h2>
       <p>At <strong>Bowl Out Rice and Noodles</strong>, we believe comfort food should hit big on flavor without overcomplicating the experience. Every bowl starts with rich, savory broths, steamed rice, and fresh ingredients prepped daily.</p>
       <p>We’re a family-owned kitchen built around doing Asian comfort classics the right way—from slow-braised pork belly miso ramen and crispy chicken karaage to fresh poke and house-made sauces that bring every bite together.</p>
       <p>Whether you’re grabbing crispy crab rangoons to share, slurping down a hot bowl of shoyu ramen, or loading up a teriyaki bowl after a busy day in Liberty Township, everything is cooked hot and fresh when you order.</p>
       <p>Big portions. House-made sauces. Honest ingredients.<br><strong>Bold bowls. Done right.</strong></p>
-      <br><strong>&bull; EST. 2026 &bull;</strong>
+      <p class="story-est"><strong>&bull; EST. 2026 &bull;</strong></p>
     </div>
   </section>
 
@@ -146,25 +165,34 @@
   <section class="order">
     <span class="category">READY TO EAT?</span>
     <h2>ORDER ONLINE FOR <span class="orange">PICKUP</span></h2>
-    <p>Skip the wait and order ahead. Click below to place your order directly through our secure ordering partner.</p>
-    <button type="button" class="button order-trigger">ORDER ONLINE</button>
-    <small>Secure checkout powered by Liberty Collective ordering portal.</small>
+    <p>Skip the wait and order ahead. Jump straight into our ordering portal—made fresh to order inside Liberty Collective.</p>
+    <div class="order-cta-stack">
+      <a
+        href="https://order.toasttab.com/online/bowl-out-liberty-collective"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="button order-direct-link"
+      >
+        ORDER VIA TOAST &rarr;
+      </a>
+      <span class="order-microcopy-block">Direct checkout via Toast Online Ordering &bull; No extra steps</span>
+    </div>
   </section>
 
   <!-- Visit & Inquiry Section -->
   <section id="visit" class="visit">
-    <div>
+    <div class="visit-intro">
       <span class="category">LOCATION &amp; HOURS</span>
       <h2>COME <span class="orange">SEE US</span></h2>
       <p>Stop by for lunch, dinner, or a late-night bite!</p>
       <div class="sibling-concepts">
         <span class="concepts-label">Explore our other concepts:</span>
-        <a href="https://www.pisocietypizza.com" target="_blank" rel="noopener noreferrer" class="concept-link" title="Pi Society Pizza">Pi Society Pizza</a>
-        <a href="https://www.smashngrab-burgers.com" target="_blank" rel="noopener noreferrer" class="concept-link" title="Smash &amp; Grab Burgers">Smash &amp; Grab Burgers</a>
-        <a href="https://www.taco-heist.com" target="_blank" rel="noopener noreferrer" class="concept-link" title="Taco Heist">Taco Heist</a>
+        <a href="https://www.pisocietypizza.com" target="_blank" rel="noopener noreferrer" class="concept-link" title="Pi Society Pizza (Westfield, IN)">Pi Society Pizza <span class="concept-location">(Westfield, IN)</span></a>
+        <a href="https://www.smashngrab-burgers.com" target="_blank" rel="noopener noreferrer" class="concept-link" title="Smash &amp; Grab Burgers (Westfield, IN)">Smash &amp; Grab Burgers <span class="concept-location">(Westfield, IN)</span></a>
+        <a href="https://www.taco-heist.com" target="_blank" rel="noopener noreferrer" class="concept-link" title="Taco Heist (Westfield, IN)">Taco Heist <span class="concept-location">(Westfield, IN)</span></a>
       </div>
     </div>
-    <div>
+    <div class="visit-details">
       <h3>LOCATION / ADDRESS</h3>
       <p>6735 Lakota Ln,<br>Liberty Township, OH 45044<br><br>Located inside Liberty Collective</p>
       <h3>HOURS OF OPERATION</h3>
@@ -190,18 +218,6 @@
     </div>
     <strong>Fundamental HG</strong>
   </footer>
-
-  <!-- External Redirect Popup Modal -->
-  <div class="modal-overlay" id="orderModal" role="dialog" aria-modal="true" aria-labelledby="orderModalTitle">
-    <div class="modal-box">
-      <h3 id="orderModalTitle">REDIRECTING TO ORDER</h3>
-      <p>You are now being redirected to our secure online ordering partner at Liberty Collective.</p>
-      <div class="modal-actions">
-        <button type="button" class="button small" id="proceedBtn">CONTINUE</button>
-        <button type="button" class="button small btn-cancel" id="cancelBtn">CANCEL</button>
-      </div>
-    </div>
-  </div>
 
   <!-- Scripts -->
   <script defer src="js/main.js"></script>
